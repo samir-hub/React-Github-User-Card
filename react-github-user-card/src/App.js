@@ -54,6 +54,9 @@ class App extends React.Component {
 
   render() {
     return (
+      <>
+      <h1>My GitHub</h1>
+     
       <div className="App">
         <Card>
           <Image src={this.state.users.avatar_url} alt={this.state.users.name} />
@@ -73,6 +76,7 @@ class App extends React.Component {
         </Card.Description>
         </Card.Content>
       </Card>
+      <h1>My Followers:</h1>
 
         {this.state.followers.map(follower => (
           <Card>
@@ -86,6 +90,7 @@ class App extends React.Component {
           ))}
 
       </div>
+      </>
     );
   }
 }
